@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excelent Soft для Standoff 2</title>
+    <meta name="description" content="Excelent Soft для Standoff 2 - лучший чит с уникальными функциями. Silent aim, ESP, Godmode и многое другое. Без банов!">
+    <meta name="keywords" content="Standoff 2, чит, Excelent Soft, Silent aim, ESP, Godmode, обход античита">
+    <meta name="author" content="Excelent Soft">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4B0082;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2E0854;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .container h2 {
+            font-size: 28px;
+            color: #9370DB;
+        }
+        .container p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .button {
+            background-color: #9370DB;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .button:hover {
+            background-color: #7B68EE;
+            transform: scale(1.05);
+        }
+        #register {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2E0854;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        #register input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            background-color: #4B0082;
+            color: #fff;
+        }
+        #register input::placeholder {
+            color: #ccc;
+        }
+        #error-message {
+            color: #ff6b6b;
+            font-size: 16px;
+            margin-top: 10px;
+            display: none;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .feature-card {
+            background-color: #2E0854;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+        .video-container {
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 10px;
+        }
+        #scrollToTop {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: #9370DB;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #scrollToTop:hover {
+            background-color: #7B68EE;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container > * {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+        .container > *:nth-child(1) { animation-delay: 0.2s; }
+        .container > *:nth-child(2) { animation-delay: 0.4s; }
+        .container > *:nth-child(3) { animation-delay: 0.6s; }
+        .container > *:nth-child(4) { animation-delay: 0.8s; }
+        .container > *:nth-child(5) { animation-delay: 1s; }
+        .container > *:nth-child(6) { animation-delay: 1.2s; }
+        .container > *:nth-child(7) { animation-delay: 1.4s; }
+        .container > *:nth-child(8) { animation-delay: 1.6s; }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
+            nav a {
+                font-size: 14px;
+            }
+            .container h2 {
+                font-size: 22px;
+            }
+            .container p {
+                font-size: 16px;
+            }
+            .feature-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Excelent Soft для Standoff 2</h1>
+    </header>
+    <nav>
+        <!-- Первая кнопка с измененной ссылкой -->
+        <a href="https://t.me/excelentsoft"><i class="fab fa-telegram"></i> Telegram</a>
+        <!-- Вторая кнопка остается прежней -->
+        <a href="#"><i class="fab fa-discord"></i> Discord</a>
+        <a href="#"><i class="fab fa-vk"></i> ВКонтакте</a>
+    </nav>
+    <div class="container">
+        <div id="register">
+            <h2>Зарегистрируйтесь</h2>
+            <input type="email" id="email" placeholder="Введите ваш email">
+            <input type="password" id="password" placeholder="Введите пароль">
+            <button class="button" onclick="register()">Зарегистрироваться</button>
+            <p id="error-message">Пожалуйста, заполните все поля!</p>
+        </div>
+        <div id="purchase" style="display: none;">
+            <h2>Купить Excelent Soft</h2>
+            <button class="button" onclick="window.location.href='https://t.me/excelentsoft'">Купить за 30 рублей</button>
+            <button class="button" style="background-color: #4B0082;" onclick="window.location.href='https://goodporno.art/categories/minet2/'">Получить бесплатно</button>
+        </div>
+        <img src="https://i.ytimg.com/vi/wiNO78MBT8s/hqdefault.jpg" alt="Standoff 2">
+        <h2>Полная доминация? Это к Excelent Soft!</h2>
+        <p>Silent aim, esp, chams, dont return, invisible, godmode, masskil, autowin, убрать отдачу. Аккаунты от 100 часов не в бане. Обход анти чита просто идеален</p>
+        <div class="features">
+            <h2>Функции Excelent Soft</h2>
+            <div class="feature-card">
+                <h3>Silent Aim</h3>
+                <p>Точное попадание без промахов.</p>
+            </div>
+            <div class="feature-card">
+                <h3>ESP</h3>
+                <p>Видите врагов через стены.</p>
+            </div>
+            <div class="feature-card">
+                <h3>God Mode</h3>
+                <p>Неуязвимость к урону.</p>
+            </div>
+        </div>
+        <div class="video-container">
+            <h2>Видео-презентация</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wiNO78MBT8s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="reviews">
+            <h2>Отзывы</h2>
+            <div class="review">
+                <p><strong>Иван:</strong> Отличный софт,                все работает без банов!</p>
+            </div>
+            <div class="review">
+                <p><strong>Алексей:</strong> Лучший чит для Standoff 2, рекомендую!</p>
+            </div>
+        </div>
+        <div class="faq">
+            <h2>FAQ</h2>
+            <div class="question">
+                <p><strong>Вопрос:</strong> Как установить софт?</p>
+                <p><strong>Ответ:</strong> После покупки вы получите инструкцию по установке.</p>
+            </div>
+            <div class="question">
+                <p><strong>Вопрос:</strong> Безопасно ли это?</p>
+                <p><strong>Ответ:</strong> Да, наш софт использует уникальные методы обхода античита.</p>
+            </div>
+        </div>
+        <div id="countdown">
+            <h2>До конца акции осталось:</h2>
+            <div id="timer">
+                <span id="days">20</span> дней
+                <span id="hours">09</span> часов
+                <span id="minutes">05</span> минут
+                <span id="seconds">52</span> секунд
+            </div>
+        </div>
+        <div class="ad">
+            <p>Другие проекты:</p>
+            <button class="button">Cheat Minecraft (soon)</button>
+            <button class="button">Cheat CS2 (soon)</button>
+            <button class="button">Cheat BS (soon)</button>
+        </div>
+    </div>
+    <div id="modal">
+        <h2>Подтверждение</h2>
+        <p>Вы уверены, что хотите продолжить?</p>
+        <button class="button" onclick="closeModal()">Отмена</button>
+        <button class="button" onclick="proceedToPurchase()">Продолжить</button>
+    </div>
+    <div id="overlay"></div>
+    <button id="scrollToTop" onclick="scrollToTop()">↑ Наверх</button>
+    <footer>
+        <p>© 2023 Excelent Soft. Все права защищены.</p>
+    </footer>
+    <script>
+        function register() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            if (!email || !password) {
+                errorMessage.innerText = 'Пожалуйста, заполните все поля!';
+                errorMessage.style.display = 'block';
+                return;
+            }
+
+            // Имитация отправки данных на сервер
+            console.log(`Регистрация пользователя: ${email}, ${password}`);
+            
+            // Скрываем форму регистрации и показываем блок покупки
+            document.getElementById('register').style.display = 'none';
+            document.getElementById('purchase').style.display = 'block';
+            errorMessage.style.display = 'none';
+        }
+
+        function showModal() {
+            document.getElementById('modal').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        function proceedToPurchase() {
+            alert("Вы успешно перешли к покупке!");
+            closeModal();
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
